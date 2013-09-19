@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__ . '/../bootstrap.php';
+
+use Symfony\Component\Console\Application;
+
+$app = new Application('Doctrine Talk Demo App', '0.0.1');
+
+$app->addCommands(array(
+    new Console\Command\CreateMemberCommand(null, $entityManager),
+    new Console\Command\ListMembersCommand(null, $entityManager),
+    new Console\Command\CreateMeetupCommand(null, $entityManager),
+    new Console\Command\MemberDetailCommand(null, $entityManager),
+    new Console\Command\CreateEventCommand(null, $entityManager),
+));
+
+$app->run();

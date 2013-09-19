@@ -1,0 +1,19 @@
+{
+    "name": "mikeatdoi/d2",
+    "authors": [
+        {
+            "name": "Michael Williams",
+            "email": "themrwilliams@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "2.3.4",
+        "instaclick/php-code-sniffer": "dev-patch-3",
+        "symfony/console": "2.4.*@dev"
+    }
+}
