@@ -16,7 +16,7 @@ Use Composer to install dependencies.
 Optionally, adjust the settings in `bootstrap.php` file. Out-of-the-box, the application
 uses SQLite3 which requires no setup, simply run:
 
-    $ bin/doctrine orm:schema-tool:create
+    $ vendor/bin/doctrine orm:schema-tool:create
 
 Usage
 -----
