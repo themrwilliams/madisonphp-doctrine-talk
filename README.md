@@ -9,7 +9,7 @@ The slides can be found on [Google Drive](https://docs.google.com/presentation/d
 Setup
 -----
 
-Use Composer to install dependencies.
+Use Composer to install dependencies. (You may need to substibtute the correct composer path for your system.)
 
     $ composer.phar install
 
@@ -31,6 +31,6 @@ Miscellaneous
 
 If you have the SQLite client installed you can connect to the database directly.
 
-    $ qlite3 db.sqlite
+    $ sqlite3 db.sqlite
 
 
